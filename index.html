@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +40,10 @@
       background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
     }
 
+    .gradient-2{
+      background: linear-gradient(136.38deg, rgb(83, 219, 58) 25.666%,rgb(255, 255, 255) 108.596%);
+    }
+
     .btn-padding-1 {
       padding: .75rem 1.5rem;
     }
@@ -58,21 +62,21 @@
 <body class="font-sora">
 
   <!-- Header-Section -->
-  <header >
+  <header id="home" >
 
     <!-- navbar-part -->
     <nav class="px-0 my-4 lg:px-24">
       <div class="navbar flex justify-between items-center">
 
         <div class="navbar-start">
-          <a class="btn btn-ghost text-xl w-32 md:w-36"> <img src="assets/img/logo-header.png" alt=""></a>
+          <a href="#home" class="btn btn-ghost text-xl w-32 md:w-36"> <img src="assets/img/logo-header.png" alt=""></a>
         </div>
 
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-base">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact us</a></li>
+            <li><a href="#product" >Product</a></li>
+            <li><a href="#service" >Services</a></li>
+            <li><a href="#contact" >Contact us</a></li>
           </ul>
         </div>
 
@@ -101,7 +105,7 @@
             tabindex="0"
             class="menu menu-sm dropdown-content rounded-box z-[1] mt-5 w-52 py-6 gap-4 shadow -left-40 bg-secondary " >
             <li><a class="text-base" href="#product">Product</a></li>
-            <li><a class="text-base" href="#services">Services</a></li>
+            <li><a class="text-base" href="#service">Services</a></li>
             <li><a class="text-base" href="#contact">Contact us</a></li>
           </ul>
             </ul>
@@ -134,37 +138,230 @@
   <!-- Header-Section -->
   <main> 
 
-    <!-- service-section -->
-     <section class="px-6 my-4 lg:px-24">
+    <!-- product-section -->
+     <section id="product" class="px-6 py-20 my-16 lg:px-28 bg-primary  scroll-mt-16">
 
-       <h2 class="text-3xl font-bold text-left mb-4 text-color">Services </h2>
+      <!-- service-heading -->
+       <h2 class="text-3xl font-bold text-left mb-4 text-color">Popular Products </h2>
        
-       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- product-main-div-content -->
+       <div class="flex flex-col lg:flex-row justify-between  gap-4 ">
 
+        <!-- product-card-left -->
+        <div class="flex flex-col justify-start items-start p-4 gap-2 rounded-lg cart-image-1 gradient-2 relative h-64 lg:h-auto">
+          <h3 class="text-4xl lg:text-2xl font-bold text-white">30% Off </h3>
+          <p class=" text-base md:text-xl  lg:text-sm  leading-6 w-2/3 md:6/4 lg:w-full ">
+            Discover a world of treats, toys, and essentials handpicked for  </p>
+          <a class="btn bg-white border outline-none btn-padding-2">Buy Now</a>
 
-        <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-          <img src="assets/img/service.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
-          <h3 class="text-xl font-bold">24/7 Services </h3>
-          <p class="text-sm text-center leading-6 px-4"> Our services are available 24/7 to cater to your needs. Whether you need assistance with a product or have a question, our team is always here to help.</p>
+          <div class=" absolute bottom-0  -right-20 md:right-0 lg:left-36">
+            <img src="assets/img/vegetable-offer.png" alt="" class="w-8/12 md:w-10/12">
+          </div>
+         
         </div> 
 
-        <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-          <img src="assets/img/delivery.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
-          <h3 class="text-xl font-bold">Fast Delivery </h3>
-          <p class="text-sm text-center leading-6 px-4">
-            Our delivery services are fast and reliable. We understand the importance of getting your products on time, which is why we have a dedicated team that ensures timely delivery. </p>
-        </div> 
+        <!-- product-card-right -->
 
-        <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-          <img src="assets/img/healthy.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
-          <h3 class="text-xl font-bold">Healthy Products</h3>
-          <p class="text-sm text-center leading-6 px-4">
-            We offer a wide range of healthy products that cater to different dietary needs. From organic produce to gluten-free options, we have something for everyone. </p>
-        </div> 
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 w-full " >
 
+          <!-- cart-1 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+          <img src="assets/img/onion.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+
+          <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+            <div class="rating">
+              <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+            </div>
+            <h3 class=" text-base lg:text-sm font-bold">Onion 250 gm </h3>
+            <p class=" text-base lg:text-sm"> $0.99 </p>
+          </div>
+
+          <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+
+          </div>
+
+          <!-- cart-2 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/onion.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Onion 500 gm </h3>
+              <p class=" text-base lg:text-sm"> $1.65 </p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          <!-- cart-3 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/onion.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Onion 1 KG</h3>
+              <p class=" text-base lg:text-sm"> $3.30 </p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          
+          <!-- cart-4 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/tomato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Tomatoes 250 gm</h3>
+              <p class=" text-base lg:text-sm"> $1.10 </p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          <!-- cart-5 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/tomato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Tomatoes 500 gm</h3>
+              <p class=" text-base lg:text-sm"> $2.20</p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          <!-- cart-6 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/tomato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Tomatoes 1 KG</h3>
+              <p class=" text-base lg:text-sm"> $4.40</p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+
+          <!-- cart-7 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/potato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Potatoes 250 gm</h3>
+              <p class=" text-base lg:text-sm"> $0.66</p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          <!-- cart-8 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/potato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Potatoes 500 gm</h3>
+              <p class=" text-base lg:text-sm"> $1.32</p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          <!-- cart-9 -->
+          <div class="flex justify-start items-center gap-4 lg:gap-2 rounded-lg p-2 bg-white cursor-pointer ">
+
+            <img src="assets/img/potato.webp" alt="services-img" class="bg-primary p-2 rounded-lg w-16 ">
+  
+            <div class="flex flex-col flex-1 justify-center items-start gap-1 text-xs" >
+              <div class="rating">
+                <span class=" flex items-center justify-center text-lg lg:text-sm gap-1"> <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500 w-4 h-4 " checked="checked" /> 4.5 </span>
+              </div>
+              <h3 class=" text-base lg:text-sm font-bold">Potatoes 1 KG</h3>
+              <p class=" text-base lg:text-sm"> $2.64</p>
+            </div>
+  
+            <a class="btn bg-white border-none outline-none  p-3"><img src="assets/icon/cart.png" alt="" class="w-6" ></a>
+  
+          </div>
+
+          </div> 
+
+          
       </div>
 
      </section>
+
+    
+      <!-- service-section -->
+      <section id="service" class="px-6 py-20 my-16 lg:px-28 scroll-mt-16">
+
+        <!-- service-heading -->
+         <h2 class="text-3xl font-bold text-left mb-4 text-color">Services </h2>
+         
+         <!-- service-main-div-content -->
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+          <!-- service-card-1 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <img src="assets/img/service.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <h3 class="text-xl font-bold">24/7 Services </h3>
+            <p class="text-sm text-center leading-6 px-4"> Our services are available 24/7 to cater to your needs. Whether you need assistance with a product or have a question, our team is always here to help.</p>
+          </div> 
+  
+          <!-- service-card-2 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <img src="assets/img/delivery.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <h3 class="text-xl font-bold">Fast Delivery </h3>
+            <p class="text-sm text-center leading-6 px-4">
+              Our delivery services are fast and reliable. We understand the importance of getting your products on time, which is why we have a dedicated team that ensures timely delivery. </p>
+          </div> 
+  
+          <!-- service-card-3 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <img src="assets/img/healthy.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <h3 class="text-xl font-bold">Healthy Products</h3>
+            <p class="text-sm text-center leading-6 px-4">
+              We offer a wide range of healthy products that cater to different dietary needs. From organic produce to gluten-free options, we have something for everyone. </p>
+          </div> 
+  
+        </div>
+  
+      </section>
 
   </main>
 
