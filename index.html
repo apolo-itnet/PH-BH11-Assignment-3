@@ -17,12 +17,22 @@
 
   <style type="text/tailwindcss">
 
-    .bg-primary {
+    /* .bg-primary {
       background-color: #EFEBE3;
+    } */
+
+    .bg-primary {
+      background-color: #F3F1ED;
+      
     }
 
     .bg-secondary {
       background-color: #179800;
+      color: white;
+    }
+
+    .marquee-bar-bg  {
+      background-color: #345333;
       color: white;
     }
 
@@ -55,6 +65,57 @@
     .font-sora {
       font-family: "Sora", serif;
     }
+
+    /* @keyframes marquee {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      .animate-marquee {
+        animation: marquee 10s linear infinite;
+      }
+
+
+    @keyframes marquee-lg {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .animate-marquee {
+          animation: marquee-lg 20s linear infinite; 
+        }
+      } */
+
+      .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        & .marquee-content {
+          display: flex;
+          gap: 20px;
+          width: max-content;
+          animation: marquee 20s linear infinite;
+        }
+      }
+
+      @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+      }
 
   </style>
 
@@ -338,14 +399,18 @@
   
           <!-- service-card-1 -->
           <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <img src="assets/img/service.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/service.png" alt="services-img" class="w-16">
+            </div>
             <h3 class="text-xl font-bold">24/7 Services </h3>
             <p class="text-sm text-center leading-6 px-4"> Our services are available 24/7 to cater to your needs. Whether you need assistance with a product or have a question, our team is always here to help.</p>
           </div> 
   
           <!-- service-card-2 -->
           <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <img src="assets/img/delivery.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/delivery.png" alt="services-img" class="w-16">
+            </div>
             <h3 class="text-xl font-bold">Fast Delivery </h3>
             <p class="text-sm text-center leading-6 px-4">
               Our delivery services are fast and reliable. We understand the importance of getting your products on time, which is why we have a dedicated team that ensures timely delivery. </p>
@@ -353,7 +418,9 @@
   
           <!-- service-card-3 -->
           <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <img src="assets/img/healthy.png" alt="services-img" class="bg-white p-4 rounded-full w-24 ">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/healthy.png" alt="services-img" class="w-16">
+            </div>
             <h3 class="text-xl font-bold">Healthy Products</h3>
             <p class="text-sm text-center leading-6 px-4">
               We offer a wide range of healthy products that cater to different dietary needs. From organic produce to gluten-free options, we have something for everyone. </p>
@@ -416,7 +483,51 @@
 
      </section>
 
+     <!-- about-section -->
+      <section id="about" class="bg-[#F3F1ED] px-6 pt-20 mt-16 lg:px-28   scroll-mt-16">
 
+        <div class="grid md:grid-cols-2 place-items-center md:items-end lg:items-center   gap-4">
+
+          <!-- image-content -->
+          <div class="w-11/12 order-2 md:order-1">
+            <img src="assets/img/About-img.webp" alt="" class="w-full">
+          </div>
+
+          <!-- text-content -->
+          <div class="text-center lg:text-left order-1 md:order-2">
+            <h2 class="text-2xl md:text-2xl font-semibold mb-4">About OrganicFarm </h2>
+            <h1 class= "font-bold text-3xl leading-normal md:text-2xl lg:text-4xl  lg:leading-snug mb-4 "> We Provide Top Quality Groceryy Products</h1> 
+
+            <p class="lg:text-sm lg:leading-6 text-justify text-gray-500 " > 
+              We are a team of passionate individuals who are dedicated to providing the best quality products to our customers . Our products are sourced from local farmers and are carefully selected to ensure that they meet our high standards . We believe in the importance of supporting local communities and promoting sustainable agriculture practices . Our goal is to provide our customers with the freshest and healthiest products possible , while also contributing to the well-being of our environment . 
+               </p>
+
+          </div>
+
+        </div>
+
+        <div></div>
+
+      </section>
+
+      <!-- marque-section -->
+
+       <section class="marquee-container overflow-hidden marquee-bar-bg">
+        <div class="marquee-content py-4 flex justify-center items-center gap-4 ">
+
+          <img src="assets/img/single-Leaf.webp" alt="" class="w-10">
+          <h2 class="text-lg md:text-lg font-semibold">Discount Up To 20% - 40% Off</h2>
+          <img src="assets/img/single-Leaf.webp" alt="" class="w-10">
+          <h2 class="text-lg md:text-lg font-semibold">Discount Up To 20% - 40% Off</h2>
+          <img src="assets/img/single-Leaf.webp" alt="" class="w-10">
+          <h2 class="text-lg md:text-lg font-semibold">Discount Up To 20% - 40% Off</h2>
+          <img src="assets/img/single-Leaf.webp" alt="" class="w-10">
+          <h2 class="text-lg md:text-lg font-semibold">Discount Up To 20% - 40% Off</h2>
+          
+        </div>
+      </section>
+
+      
      <!-- newsletter-section -->
     <section id="news-letter" class="px-6 relative -bottom-40 lg:-bottom-32 lg:px-28 ">
 
@@ -465,13 +576,21 @@
 
       <!-- social-content -->
       <div>
-        <h1 class="text-base mb-6">Follow us</h>
-          <ul class="flex lg:justify-around items-center gap-4 text-xl">
-            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-
+        <h1 class="text-base">Follow us</h>
+          <ul class="flex lg:justify-around items-center gap-4 mt-6 text-xl">
+                    
+            <li>
+              <a href="" class="marquee-bar-bg p-4 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 hover:text-green-800 transition duration-300 " > <i class="aspect-square fa-brands fa-facebook-f"></i> </a>
+            </li>
+            <li>
+              <a href="" class="marquee-bar-bg p-4 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 hover:text-green-800 transition duration-300 " > <i class="aspect-square fa-brands fa-instagram"></i> </a>
+            </li>
+            <li>
+              <a href="" class="marquee-bar-bg p-4 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 hover:text-green-800 transition duration-300 " ><i class="aspect-square fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="" class="marquee-bar-bg p-4 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 hover:text-green-800 transition duration-300 " ><i class="aspect-square fa-brands fa-youtube"></i></a>
+            </li>
 
           </ul>
       </div>
