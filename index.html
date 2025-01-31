@@ -59,7 +59,7 @@
   </style>
 
 </head>
-<body class="font-sora">
+<body class="font-sora ">
 
   <!-- Header-Section -->
   <header id="home" >
@@ -139,7 +139,7 @@
   <main> 
 
     <!-- product-section -->
-     <section id="product" class="px-6 py-20 my-16 lg:px-28 bg-primary  scroll-mt-16">
+     <section id="product" class="px-6 py-20 mt-16 lg:px-28 bg-primary  scroll-mt-16">
 
       <!-- service-heading -->
        <h2 class="text-3xl font-bold text-left mb-4 text-color">Popular Products </h2>
@@ -148,14 +148,14 @@
        <div class="flex flex-col lg:flex-row justify-between  gap-4 ">
 
         <!-- product-card-left -->
-        <div class="flex flex-col justify-start items-start p-4 gap-2 rounded-lg cart-image-1 gradient-2 relative h-64 lg:h-auto">
+        <div class="flex flex-col justify-start items-start p-4 gap-2 rounded-lg cart-image-1 gradient-2 relative h-64 lg:h-auto overflow-hidden">
           <h3 class="text-4xl lg:text-2xl font-bold text-white">30% Off </h3>
           <p class=" text-base md:text-xl  lg:text-sm  leading-6 w-2/3 md:6/4 lg:w-full ">
             Discover a world of treats, toys, and essentials handpicked for  </p>
           <a class="btn bg-white border outline-none btn-padding-2">Buy Now</a>
 
-          <div class=" absolute bottom-0  -right-20 md:right-0 lg:left-36">
-            <img src="assets/img/vegetable-offer.png" alt="" class="w-8/12 md:w-10/12">
+          <div class=" absolute bottom-0 -right-16  md:right-0 lg:left-36 ">
+            <img src="assets/img/vegetable-offer.png" alt="" class=" object-contain w-9/12 md:w-10/12 ">
           </div>
          
         </div> 
@@ -328,7 +328,7 @@
 
     
       <!-- service-section -->
-     <section id="service" class="px-6 py-20 my-16 lg:px-28 scroll-mt-16">
+     <section id="service" class="px-6 py-20 mt-16 lg:px-28 scroll-mt-16">
 
         <!-- service-heading -->
          <h2 class="text-3xl font-bold text-left mb-4 text-color">Services </h2>
@@ -365,7 +365,7 @@
 
 
       <!-- new-arrival-section -->
-     <section id="product" class="px-6 py-20 my-16 lg:px-28 bg-primary  scroll-mt-16">
+     <section id="product" class="px-6 py-20 mt-16 lg:px-28 bg-primary  scroll-mt-16">
 
       <!-- service-heading -->
        <h2 class="text-3xl font-bold text-left mb-4 text-color">Popular Products </h2>
@@ -378,15 +378,15 @@
         <div class="w-full lg:w-[60%] mx-auto flex justify-evenly items-center flex-row  bg-[#115414] rounded-lg px-4 gap-8 min-h-[300px] lg:min-h-[320px]">
 
           <!-- content-part -->
-          <div class="flex flex-col justify-center items-start gap-4  ">
+          <div class="flex flex-col justify-center items-start gap-4 md:pl-24 ">
           <img src="assets/img/dawat-logo.png" alt="" class="w-2/4">
           <a class="btn bg-[#63B76D] text-white border-none outline-none btn-padding-2 font-normal ">Cook Exotic Dishes</a>
-          <h3 class="text-xl md:text-2xl text-white">UP to <span class="font-bold">40% OFF</span></h3>
+          <h3 class="text-xl md:text-2xl text-white">UP to <span class="font-bold">20% OFF</span></h3>
           </div>
 
           <!-- image-part -->
           <div class="flex justify-center items-center ">
-            <img src="assets/img/dawat-mock-up.png" alt="" class="md:w-11/12">
+            <img src="assets/img/dawat-mock-up.png" alt="" class=" w-full md:w-11/12">
           </div>
 
          
@@ -396,7 +396,7 @@
         <div class="w-full lg:w-[40%] mx-auto flex justify-evenly items-center flex-row  bg-[#102861] rounded-lg px-4 gap-8 min-h-[300px] lg:min-h-[320px]">
 
           <!-- content-part -->
-          <div class="flex flex-col justify-center items-start gap-4  ">
+          <div class="flex flex-col justify-center items-start gap-4    ">
           <img src="assets/img/india-gate-logo.png" alt="" class="w-2/4">
           <a class="btn bg-[#2A4D97] text-white border-none outline-none btn-padding-2 font-normal ">World’s No.1 Rice</a>
           <h3 class="text-xl md:text-2xl text-white">UP to <span class="font-bold">40% OFF</span></h3>
@@ -418,9 +418,9 @@
 
 
      <!-- newsletter-section -->
-    <section id="news-letter" class="px-6 py-20 my-16 lg:px-28   scroll-mt-16">
+    <section id="news-letter" class="px-6 relative -bottom-40 lg:-bottom-32 lg:px-28 ">
 
-      <div class="flex flex-col lg:flex-row justify-around items-center bg-primary  py-14 px-28 rounded-lg ">
+      <div class="flex flex-col lg:flex-row justify-around items-center bg-primary py-8 px-6  lg:py-14 lg:px-28 rounded-lg gap-8 lg:gap-0 ">
 
         <!-- image-content -->
          <div>
@@ -428,11 +428,11 @@
          </div>
 
          <!-- text-content -->
-         <div>
-          <h1 class="text-4xl font-bold mb-6">Get Grocery News!</h1>
-          <p class="text-base font-semibold mb-8 " >Exclusive training tips, ticks, product deals and more.</p>
+         <div class="text-center lg:text-left">
+          <h1 class=" text-2xl lg:text-4xl font-bold mb-3 lg:mb-6">Get Grocery News!</h1>
+          <p class=" text-sm lg:text-base font-semibold mb-4 lg:mb-8 " >Exclusive training tips, ticks, product deals and more.</p>
           <input type="text" placeholder="Enter email...." class="input input-bordered w-full max-w-xs" /> <br>
-          <a class="btn bg-white border-none outline-none btn-bg-primary btn-padding-1 mt-8">Register</a>
+          <a class="btn bg-white border-none outline-none btn-bg-primary btn-padding-1 mt-4 lg:mt-8">Register</a>
 
 
          </div>
@@ -444,9 +444,41 @@
 
   </main>
 
-  <footer> 
+  <footer id="contact" class="bg-secondary px-6 pb-8 lg:pb-20 pt-60"> 
+
+    <div class=" grid lg:grid-cols-3 lg:place-items-center place-content-center gap-8 lg:gap-0  lg:px-28 scroll-mt-16" ">
+
+      <!-- company-content -->
+      <div>
+        <a href="#home"> <img src="assets/img/logo-footer.png" alt=""></a>
+        <p class="text-sm mt-2">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      </div>
+
+      <!-- quicklink-content -->
+      <div class="navbar-center ">
+        <ul class="flex flex-col gap-4">
+          <li><a href="#product" >Product</a></li>
+          <li><a href="#service" >Services</a></li>
+          <li><a href="#contact" >Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- social-content -->
+      <div>
+        <h1 class="text-base mb-6">Follow us</h>
+          <ul class="flex lg:justify-around items-center gap-4 text-xl">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+
+
+          </ul>
+      </div>
+
+    </div>
 
   </footer>
-  
+
 </body>
 </html>
