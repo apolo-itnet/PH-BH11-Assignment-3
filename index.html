@@ -86,7 +86,7 @@
   </style>
 
 </head>
-<body class="font-sora ">
+<body class="font-sora">
 
   <!-- Header-Section -->
   <header id="home" >
@@ -186,8 +186,50 @@
   </header>
 
 
-  <!-- Header-Section -->
+  <!-- Main-Section -->
   <main> 
+    
+    <!-- service-section -->
+    <section id="service" class="px-6 py-20 mt-16 lg:px-28 scroll-mt-16">
+
+        <!-- service-heading -->
+         <h2 class="text-3xl font-bold text-left mb-4 text-color">Services </h2>
+         
+         <!-- service-main-div-content -->
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  
+          <!-- service-card-1 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/service.png" alt="services-img" class="w-16">
+            </div>
+            <h3 class="text-xl font-bold">24/7 Services </h3>
+            <p class="text-sm text-center leading-6 px-4"> Our services are available 24/7 to cater to your needs. Whether you need assistance with a product or have a question, our team is always here to help.</p>
+          </div> 
+  
+          <!-- service-card-2 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/delivery.png" alt="services-img" class="w-16">
+            </div>
+            <h3 class="text-xl font-bold">Fast Delivery </h3>
+            <p class="text-sm text-center leading-6 px-4">
+              Our delivery services are fast and reliable. We understand the importance of getting your products on time, which is why we have a dedicated team that ensures timely delivery. </p>
+          </div> 
+  
+          <!-- service-card-3 -->
+          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
+            <div class="bg-white p-4 rounded-full flex items-center ">
+              <img src="assets/img/healthy.png" alt="services-img" class="w-16">
+            </div>
+            <h3 class="text-xl font-bold">Healthy Products</h3>
+            <p class="text-sm text-center leading-6 px-4">
+              We offer a wide range of healthy products that cater to different dietary needs. From organic produce to gluten-free options, we have something for everyone. </p>
+          </div> 
+  
+        </div>
+  
+    </section>
 
     <!-- product-section -->
     <section id="product" class="px-6 py-20 mt-16 lg:px-28 bg-primary  scroll-mt-16">
@@ -376,48 +418,6 @@
       </div>
 
     </section>
-    
-    <!-- service-section -->
-    <section id="service" class="px-6 py-20 mt-16 lg:px-28 scroll-mt-16">
-
-        <!-- service-heading -->
-         <h2 class="text-3xl font-bold text-left mb-4 text-color">Services </h2>
-         
-         <!-- service-main-div-content -->
-         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-  
-          <!-- service-card-1 -->
-          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <div class="bg-white p-4 rounded-full flex items-center ">
-              <img src="assets/img/service.png" alt="services-img" class="w-16">
-            </div>
-            <h3 class="text-xl font-bold">24/7 Services </h3>
-            <p class="text-sm text-center leading-6 px-4"> Our services are available 24/7 to cater to your needs. Whether you need assistance with a product or have a question, our team is always here to help.</p>
-          </div> 
-  
-          <!-- service-card-2 -->
-          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <div class="bg-white p-4 rounded-full flex items-center ">
-              <img src="assets/img/delivery.png" alt="services-img" class="w-16">
-            </div>
-            <h3 class="text-xl font-bold">Fast Delivery </h3>
-            <p class="text-sm text-center leading-6 px-4">
-              Our delivery services are fast and reliable. We understand the importance of getting your products on time, which is why we have a dedicated team that ensures timely delivery. </p>
-          </div> 
-  
-          <!-- service-card-3 -->
-          <div class="flex flex-col justify-center items-center bg-primary p-4 gap-2 rounded-lg">
-            <div class="bg-white p-4 rounded-full flex items-center ">
-              <img src="assets/img/healthy.png" alt="services-img" class="w-16">
-            </div>
-            <h3 class="text-xl font-bold">Healthy Products</h3>
-            <p class="text-sm text-center leading-6 px-4">
-              We offer a wide range of healthy products that cater to different dietary needs. From organic produce to gluten-free options, we have something for everyone. </p>
-          </div> 
-  
-        </div>
-  
-    </section>
 
     <!-- new-arrival-section -->
     <section id="product" class="px-6 py-20 mt-16 lg:px-28 bg-primary  scroll-mt-16">
@@ -472,7 +472,7 @@
     </section>
 
     <!-- about-section -->
-    <section id="about" class="bg-[#F3F1ED] px-6 pt-4 mt-16 lg:px-28 ">
+    <section id="about" class="bg-primary px-6 pt-10 mt-16 lg:px-28 scroll-mt-16 ">
 
         <div class="grid md:grid-cols-2 place-items-center md:items-end lg:items-center   gap-4">
 
@@ -527,7 +527,7 @@
           <h1 class=" text-2xl lg:text-4xl font-bold mb-3 lg:mb-6">Get Grocery News!</h1>
           <p class=" text-sm lg:text-base font-semibold mb-4 lg:mb-8 " >Exclusive training tips, ticks, product deals and more.</p>
           <input type="text" placeholder="Enter email...." class="input input-bordered w-full max-w-xs" /> <br>
-          <a class="btn bg-white border-none outline-none btn-bg-primary btn-padding-1 mt-4 lg:mt-8">Register</a>
+          <a class="btn bg-white border-none outline-none btn-bg-primary btn-padding-1 mt-4 lg:mt-8">Subscribe</a>
 
 
          </div>
@@ -539,6 +539,7 @@
 
   </main>
 
+  <!-- Footer-Section -->
   <footer id="contact" class="bg-secondary px-6 pb-12 lg:pb-20 pt-60"> 
 
     <div class=" grid lg:grid-cols-3 lg:place-items-center place-content-center gap-8 lg:gap-0  lg:px-28 scroll-mt-16" ">
